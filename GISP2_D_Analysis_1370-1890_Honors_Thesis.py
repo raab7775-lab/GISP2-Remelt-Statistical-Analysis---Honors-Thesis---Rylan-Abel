@@ -15,12 +15,12 @@ from scipy.stats import shapiro
 from scipy.stats import spearmanr
 import random
 
-GISP04 = pd.read_csv(r"C:\Users\omgit\OneDrive\Desktop\Research\GISP2\GISP2_Holocene_deuterium.txt")
-GISP04 = pd.read_table(r"C:\Users\omgit\OneDrive\Desktop\Research\GISP2\GISP2_Holocene_deuterium.txt", sep='\t', skiprows=[0])
-depth25 = np.loadtxt(r"C:\Users\omgit\OneDrive\Desktop\Research\GISP2\depth_age_interpret (1).txt")
-D225 = np.loadtxt(r"C:\Users\omgit\OneDrive\Desktop\Research\GISP2\dD_SIL_cfa_interpret_age.txt")
+GISP04 = pd.read_csv(r"C:\Users\omgit\OneDrive\Desktop\GISP2 Statistical Analysis - Rylan Abel\Original Analysis\All data used (edited)\Old_Analysis\2004_GISP2_Holocene_deuterium.txt")
+GISP04 = pd.read_table(r"C:\Users\omgit\OneDrive\Desktop\GISP2 Statistical Analysis - Rylan Abel\Original Analysis\All data used (edited)\Old_Analysis\2004_GISP2_Holocene_deuterium.txt", sep='\t', skiprows=[0])
+depth25 = np.loadtxt(r"C:\Users\omgit\OneDrive\Desktop\GISP2 Statistical Analysis - Rylan Abel\Original Analysis\All data used (edited)\New_Melt\2025_depth_model.txt")
+D225 = np.loadtxt(r"C:\Users\omgit\OneDrive\Desktop\GISP2 Statistical Analysis - Rylan Abel\Original Analysis\All data used (edited)\New_Melt\2025_data_dD_SIL_cfa.txt")
 ModGISP04 = GISP04[GISP04["deuterium"] != 999999]
-GISP04pt2 = pd.read_csv(r"C:\Users\omgit\OneDrive\Desktop\Research\GISP2\GISP2_Isotope_data_james_white.csv")
+GISP04pt2 = pd.read_csv(r"C:\Users\omgit\OneDrive\Desktop\GISP2 Statistical Analysis - Rylan Abel\Original Analysis\All data used (edited)\Old_Analysis\2004_GISP2_Below_1600_deuterium.csv")
 ModGISP04pt2 = GISP04pt2[GISP04pt2["delta D (per mil)"] != 999999]
 
 # Interval Given is between 1372 and 1598
