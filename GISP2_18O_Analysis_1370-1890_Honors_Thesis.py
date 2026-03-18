@@ -149,7 +149,7 @@ def Moving_Mean(a, b, c, Figure=False):
     '''
     Moving mean function applied to a same resolution interval of the 1997
     and the 2025 data. Takes an interval of points (c) and takes
-    the avaerage, done with every point within the arrays. Smooth out
+    the mean, done with every point within the arrays. Smooth out
     short-term fluctuations and highlight longer-term trends or cycles.
 
     Parameters
