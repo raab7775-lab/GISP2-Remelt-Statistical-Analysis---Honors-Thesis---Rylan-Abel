@@ -1,6 +1,6 @@
 # GISP2-Remelt-Statistical-Analysis---Honors-Thesis---Rylan-Abel
 
-### Thesis Information
+## Thesis Information
 
 Data Analysis and Comparison of the New GISP2 Ice Core Data: Continuous High-Resolution Water Isotope Data Vs Discrete 1997 and 2004 Collection 
 
@@ -20,31 +20,35 @@ The Greenland Ice Sheet Project (GISP2) is an ice core drilled within the Greenl
 
 ## Purpose of Repository and Citations
 
-This repository contains the code used in Rylan Abel's honors thesis "Data Analysis and Comparison of the New GISP2 Ice Core Data: Continuous High-Resolution Water Isotope Data Vs Discrete 1997 and 2004 Collection". It includes a copy of all the code for the interval used within the thesis and any data used. The thesis itself oversees a statistical analysis between the original GISP2 analyses completed on IRMS and the INSTAAR stable isotope lab's new re-analysis of GISP2 using a CRDS-CFA system. The analysis of GISP2 for delta 18O was originally completed by P.M. Grootes and M. Stuvier in 2007 at the University of Washington's Quaternary Isotope Laboratory and the analysis of GISP2 for delta deuterium (D) was completed by J. White in 2004 at the University of Colorado Boulder’s Stable Isotope Laboratory. The majority of the data analysis was created in Python (Spyder (Python 3.13)), some visuals were edited within Fire Alpaca (64bit). 
+This repository contains the code used in Rylan Abel's honors thesis, "Data Analysis and Comparison of the New GISP2 Ice Core Data: Continuous High-Resolution Water Isotope Data Vs Discrete 1997 and 2004 Collection". It includes a copy of all the code for the interval used within the thesis and any data used. The thesis itself oversees a statistical analysis between the original GISP2 analyses completed on IRMS and the INSTAAR stable isotope lab's new re-analysis of GISP2 using a CRDS-CFA system. The analysis of GISP2 for delta 18O was originally completed by P.M. Grootes and M. Stuvier in 2007 at the University of Washington's Quaternary Isotope Laboratory, and the analysis of GISP2 for delta deuterium (D) was completed by J. White in 2004 at the University of Colorado Boulder’s Stable Isotope Laboratory. The majority of the data analysis was created in Python (Spyder (Python 3.13)), and some visuals were edited within Fire Alpaca (64bit). 
 
 GISP2 Original Site: a latitude of 72.5833333 and a longitude of -38.466667.
-Stored within the National Science Foundation Ice Core Facility
-The citations for original 1997 and 2004 datasets:
+Core stored within the National Science Foundation Ice Core Facility for 30 years.
+The citations for the original 1997 and 2004 datasets:
 - P. M. Grootes, M. Stuiver. (1997). GISP2 Ice Core 110,000 Year Oxygen Isotope Data. NOAA Paleoclimatology Program, National Centers for Environmental Information (NCEI). Retrieved April 27, 2025. https://www.ncei.noaa.gov/access/paleo-search/study/17796, doi:10.25921/jtjy-9030
 - White, J. (2004). GISP2 Stable Isotopes (Deuterium, Deuterium Excess, and Oxygen). Boulder, CO: National Center for Atmospheric Research, ARCSS Data Archive. Retrieved October 29, 2025.
 
 ## Contents of Repository
 
-GISP2_18O_Analysis_1370-1890_Honors_Thesis.py is the script that completes all analysis of delta 18O, including the downsampling of 2025 dataset and the statistical analysis between the 1997 and 2025 datasets.
-GISP2_D_Analysis_1370-1890_Honors_Thesis.py is the script that completes all analysis of delta D, including the downsampling of 2025 dataset and the statistical analysis between the 2004 and 2025 datasets.
+GISP2_18O_Analysis_1370-1890_Honors_Thesis.py is the script that completes all analyses of delta 18O, including the downsampling of the 2025 dataset and the statistical analysis between the 1997 and 2025 datasets.
+GISP2_D_Analysis_1370-1890_Honors_Thesis.py is the script that completes all analyses of delta D, including the downsampling of the 2025 dataset and the statistical analysis between the 2004 and 2025 datasets.
+
+"All data used (edited)" contains the version of the 1997/2004 GISP2 datasets that can be directly used within the .py files provided, with metadata clipped and correct column names for direct application into code. Additionally, the section of the 2025 data produced at the INSAAR-SIL for this analysis is included within a zip file containing only the interval completed in time for the production of this thesis. This file is labeled New_Analysis.zip, while the 1997/2004 datasets are within the file Old_Analysis
+"All data used (original)" contains the version of the 1997 and 2004 datasets unedited, thus including all metadata and essentially appearing as they were upon originally being downloaded. 
+
+Downsampling for both delta 18O and D:
+- Completed in one part for delta 18O.
+- completed in two parts for delta D due to split in dataset resolution, and the combined in the Interval_complete(...) function.
 
 Statistical Analysis completed for both delta 18O and D:
-Lagging Mean: Takes a set interval and and takes the mean of it, done with every point within the arrays. Smooth out short-term fluctuations and highlight longer-term trends or cycles.
+Lagging Mean: Takes a set interval and takes the mean of it, done with every point within the arrays. Smooth out short-term fluctuations and highlight longer-term trends or cycles.
 Difference between datasets: Subtracts the new Data from the old dataset. Takes the mean and Standard Deviation of the difference.
-Comparison test: tests the dataset's normality with the Shapiro-Wilk test, then applies a parametric or non parametric test to the the new and old dataset depending on Shapiro results. Completed to test of there is any statistically significant difference between the analyses.
-Creation of a CTL Mean dataset with and accompanying T-Test: Creates a normal distribution from the both the old and new datasets using Central Limit Theorem and takes a t-test of those normal datasets. Completed to test of there is any statistically significant difference between the analyses again.
-Lag Correlation test with an accompanying re-analyzer that appplies lag to a given interval: moves the 2025 dataset up or down compared to the 1997/2004 dataset and completes a correlation test. Tests for any apparent depth offset in the core, due to alteration or not.
-
-"All data used (edited)" contains the version of the 1997/2004 GISP2 datasets that can be directly used within the .py files provided, with metadata clipped and correct column names for direct application into code. Additionally the section of the 2025 data produced at the INSAAR-SIL for this analysis is included within a zip file containing only the interval completed in time for the productiom of this thesis. This file is labeled New_Anlysis.zip while the 1997/2004 datasets are within the file Old_Analysis
-"All data used (original)" contains the version of the 1997 and 2004 datasets unedited, thus including all meta data and essnetially appearing as they were originally downloaded. 
+Comparison test: tests the dataset's normality with the Shapiro-Wilk test, then applies a parametric or non-parametric test to the new and old datasets, depending on the Shapiro results. Completed to determine if there is any statistically significant difference between the analyses.
+Creation of a CTL Mean dataset with an accompanying T-Test: Creates a normal distribution from both the old and new datasets using the Central Limit Theorem and takes a t-test of those normal datasets. Completed to test of there is any statistically significant difference between the analyses again.
+Lag Correlation test with an accompanying re-analyzer that applies lag to a given interval: moves the 2025 dataset up or down compared to the 1997/2004 dataset and completes a correlation test. Tests for any apparent depth offset in the core, due to alteration or not.
 
 Notes for using the files produced for the analysis of the entire 2025 re-analysis of GISP2
-The intention of the code created for this project was for it to be quickly addaptable for use when the 2025 re-analysis is completed. There are only three additional changes to the base code provided to make it ready for use in with the full dataset.
+The intention of the code created for this project was for it to be quickly adaptable for use when the 2025 re-analysis is completed. There are only three additional changes to the base code provided to make it ready for use in with the full dataset.
 - Change the pd.read_csv(...) to the complete files of the 2025 dataset only
-- **Change the Testing_Restabalization(...) function to include the overall interval of the dataset.** The current code contain the 1370-1890 m interval for convience of analysis, and for analysis with the whole interval this needs to be adjusted. Done easily by going to the bottom of the function and changing the start and end interval of the bottom four lines.
-- Due to several gaps being present at the top of the core, it is advised to make a function within the Interval functions to account for the number of NaNs present within an interval that disregards any intervals with more than 20% NaNs as this this might skew analysis. Not a particular problem for the interval studied, which had more consistent archival pieces.
+- **Change the Testing_Restabilization (...) function to include the overall interval of the dataset.** The current code contains the 1370-1890 m interval for convenience of analysis, and for analysis with the whole interval, this needs to be adjusted. Done easily by going to the bottom of the function and changing the start and end interval of the bottom four lines.
+- Due to several gaps being present at the top of the core, it is advised to make a function within the Interval functions to account for the number of NaNs present within an interval that disregards any intervals with more than 20% NaNs as this might skew the analysis. Not a particular problem for the interval studied, which had more consistent archival pieces.
