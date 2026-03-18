@@ -18,10 +18,6 @@ Dr. Brian Hynek, The Department of Geologic Sciences
 
 Dr. Tracy Farrell, The Program for Writing and Rhetoric
 
-Additional Defense Committee Member and Reader:
-
-Dr. Tyler Jones, The Department of Geologic Science
-
 
 
 Thesis Abstract:
