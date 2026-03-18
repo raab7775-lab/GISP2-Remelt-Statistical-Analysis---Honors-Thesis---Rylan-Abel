@@ -20,20 +20,27 @@ The Greenland Ice Sheet Project (GISP2) is an ice core drilled within the Greenl
 
 ## Purpose of Repository and Citations
 
-This repository contains the code used in Rylan Abel's honors thesis, "Data Analysis and Comparison of the New GISP2 Ice Core Data: Continuous High-Resolution Water Isotope Data Vs Discrete 1997 and 2004 Collection". It includes a copy of all the code for the interval used within the thesis and any data used. The thesis itself oversees a statistical analysis between the original GISP2 analyses completed on IRMS and the INSTAAR stable isotope lab's new re-analysis of GISP2 using a CRDS-CFA system. The analysis of GISP2 for delta 18O was originally completed by P.M. Grootes and M. Stuvier in 2007 at the University of Washington's Quaternary Isotope Laboratory, and the analysis of GISP2 for delta deuterium (D) was completed by J. White in 2004 at the University of Colorado Boulder’s Stable Isotope Laboratory. The majority of the data analysis was created in Python (Spyder (Python 3.13)), and some visuals were edited within Fire Alpaca (64bit). 
+This repository contains the code used in Rylan Abel's honors thesis, "Data Analysis and Comparison of the New GISP2 Ice Core Data:
+
+Continuous High-Resolution Water Isotope Data Vs Discrete 1997 and 2004 Collection". It includes a copy of all the code for the interval used within the thesis and any data used. The thesis itself oversees a statistical analysis between the original GISP2 analyses completed on IRMS and the INSTAAR stable isotope lab's new re-analysis of GISP2 using a CRDS-CFA system. The analysis of GISP2 for delta 18O was originally completed by P.M. Grootes and M. Stuvier in 2007 at the University of Washington's Quaternary Isotope Laboratory, and the analysis of GISP2 for delta deuterium (D) was completed by J. White in 2004 at the University of Colorado Boulder’s Stable Isotope Laboratory. The majority of the data analysis was created in Python (Spyder (Python 3.13)), and some visuals were edited within Fire Alpaca (64bit). 
 
 GISP2 Original Site: a latitude of 72.5833333 and a longitude of -38.466667.
+
 Core stored within the National Science Foundation Ice Core Facility for 30 years.
+
 The citations for the original 1997 and 2004 datasets:
+
 - P. M. Grootes, M. Stuiver. (1997). GISP2 Ice Core 110,000 Year Oxygen Isotope Data. NOAA Paleoclimatology Program, National Centers for Environmental Information (NCEI). Retrieved April 27, 2025. https://www.ncei.noaa.gov/access/paleo-search/study/17796, doi:10.25921/jtjy-9030
 - White, J. (2004). GISP2 Stable Isotopes (Deuterium, Deuterium Excess, and Oxygen). Boulder, CO: National Center for Atmospheric Research, ARCSS Data Archive. Retrieved October 29, 2025.
 
 ## Contents of Repository
 
 GISP2_18O_Analysis_1370-1890_Honors_Thesis.py is the script that completes all analyses of delta 18O, including the downsampling of the 2025 dataset and the statistical analysis between the 1997 and 2025 datasets.
+
 GISP2_D_Analysis_1370-1890_Honors_Thesis.py is the script that completes all analyses of delta D, including the downsampling of the 2025 dataset and the statistical analysis between the 2004 and 2025 datasets.
 
 "All data used (edited)" contains the version of the 1997/2004 GISP2 datasets that can be directly used within the .py files provided, with metadata clipped and correct column names for direct application into code. Additionally, the section of the 2025 data produced at the INSAAR-SIL for this analysis is included within a zip file containing only the interval completed in time for the production of this thesis. This file is labeled New_Analysis.zip, while the 1997/2004 datasets are within the file Old_Analysis
+
 "All data used (original)" contains the version of the 1997 and 2004 datasets unedited, thus including all metadata and essentially appearing as they were upon originally being downloaded. 
 
 Downsampling for both delta 18O and D:
