@@ -147,9 +147,9 @@ def Interval(a, b, Figure=False):
 
 def Moving_Mean(a, b, c, Figure=False):
     '''
-    Moving mean function applied to a same resolution interval of the 1997
-    and the 2025 data. Takes an interval of points (c) and takes
-    the mean, done with every point within the arrays. Smooth out
+    Moving mean function applied to the same resolution interval of the 2004
+    and the 2025 data. Takes an interval set value of points and takes
+    the mean, done for with every point within the arrays. Smooth out
     short-term fluctuations and highlight longer-term trends or cycles.
 
     Parameters
