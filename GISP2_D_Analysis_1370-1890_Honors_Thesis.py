@@ -507,11 +507,11 @@ def Difference(a, b, Figure=False, Figure2=False):
 
 def Comparison_Tests(a, b, Figure=False):
     '''
-    Tests for the normality of the 2004 and 2025 data set, then applys a
-    subsequent parametric or nonparametric camparison based on the normality.
-    Output is two printed statments, the first being the results of the
-    shapiro test (>0.05 is normal), and the second being the results of
-    the parametric or nonparametric tests (<0.05 is significant difference).
+    Tests for the normality of the 2004 and 2025 data sets, then applies a
+    subsequent parametric or nonparametric comparison based on the normality.
+    Output is two printed statements, the first being the results of the
+    Shapiro-Wilk test (>0.05 is normal), and the second is the results of
+    The parametric or nonparametric tests (<0.05 is a significant difference).
 
     Parameters
     ----------
@@ -522,7 +522,7 @@ def Comparison_Tests(a, b, Figure=False):
     Figure : bool, optional
         A figure of the resulting comparison test after testing normality,
         Contains the histogram distribution of the 2004 data, the 2025 data
-        and both dataset overlaid. The default is False.
+        and both datasets overlaid. The default is False.
 
     Returns
     -------
@@ -575,19 +575,19 @@ def Comparison_Tests(a, b, Figure=False):
 
 def Testing_Normality(a, b, c, p_value=False, Histograms=False):
     '''
-    To compare both data sets with a t-test, central limit theorum is used.
+    To compare both data sets with a t-test, the central limit theorem is used.
     It forms a normal distribution of the means of both data by taking a
-    random sample of an established interval size and takeing the mean. This
+    random sample of an established interval size and taking the mean. This
     is accomplished with both datasets by using indexing to take from the same
     depth between datasets. By sampling several times, a normal distribution
-    is taken.
+    is obtained.
 
     Parameters
     ----------
     a : int
         Input the number of trials accomplished.
     b : int
-        Input the sample size of each trail.
+        Input the sample size of each trial.
     c : int
         Set a seed number. Thesis accomplished with seed number 42.
     p_value : bool, optional
@@ -834,7 +834,7 @@ def Correlation_Lag(a, b, d, e, f):
     Function that performs a lag correlation on the 2004 and 2025 δD
     data, determining if there is an offset in the data as a result of storage.
     The 2025 dataset is the dataset that is moved up or down core.
-    Outputs a figure plotted offset array against correlation coefficent
+    Outputs a figure plotted offset array against correlation coefficient
     values with zero offset marked by a line.
 
     Parameters
@@ -850,9 +850,9 @@ def Correlation_Lag(a, b, d, e, f):
         Input right end member of interval of depth offset. Ex: 0.2 is moving
         the 2025 dataset down core 0.2 m.
     f : float
-        Input the interval of in which correlation tests occure. Ex: 0.01
+        Input the interval of in which correlation tests occur. Ex: 0.01
         performs a correlation test every 0.01 m from the left end member to
-        the right end memeber
+        the right end member
 
     Returns
     -------
