@@ -37,15 +37,17 @@ GISP2_D_Analysis_1370-1890_Honors_Thesis.py is the script that completes all ana
 "All data used (original)" contains the version of the 1997 and 2004 datasets unedited, thus including all metadata and essentially appearing as they were upon originally being downloaded. 
 
 Downsampling for both delta 18O and D:
+
 - Completed in one part for delta 18O.
 - completed in two parts for delta D due to split in dataset resolution, and the combined in the Interval_complete(...) function.
 
 Statistical Analysis completed for both delta 18O and D:
-Lagging Mean: Takes a set interval and takes the mean of it, done with every point within the arrays. Smooth out short-term fluctuations and highlight longer-term trends or cycles.
-Difference between datasets: Subtracts the new Data from the old dataset. Takes the mean and Standard Deviation of the difference.
-Comparison test: tests the dataset's normality with the Shapiro-Wilk test, then applies a parametric or non-parametric test to the new and old datasets, depending on the Shapiro results. Completed to determine if there is any statistically significant difference between the analyses.
-Creation of a CTL Mean dataset with an accompanying T-Test: Creates a normal distribution from both the old and new datasets using the Central Limit Theorem and takes a t-test of those normal datasets. Completed to test of there is any statistically significant difference between the analyses again.
-Lag Correlation test with an accompanying re-analyzer that applies lag to a given interval: moves the 2025 dataset up or down compared to the 1997/2004 dataset and completes a correlation test. Tests for any apparent depth offset in the core, due to alteration or not.
+
+- Lagging Mean: Takes a set interval and takes the mean of it, done with every point within the arrays. Smooth out short-term fluctuations and highlight longer-term trends or cycles.
+- Difference between datasets: Subtracts the new Data from the old dataset. Takes the mean and Standard Deviation of the difference.
+- Comparison test: tests the dataset's normality with the Shapiro-Wilk test, then applies a parametric or non-parametric test to the new and old datasets, depending on the Shapiro results. Completed to determine if there is any statistically significant difference between the analyses.
+- Creation of a CTL Mean dataset with an accompanying T-Test: Creates a normal distribution from both the old and new datasets using the Central Limit Theorem and takes a t-test of those normal datasets. Completed to test of there is any statistically significant difference between the analyses again.
+- Lag Correlation test with an accompanying re-analyzer that applies lag to a given interval: moves the 2025 dataset up or down compared to the 1997/2004 dataset and completes a correlation test. Tests for any apparent depth offset in the core, due to alteration or not.
 
 Notes for using the files produced for the analysis of the entire 2025 re-analysis of GISP2
 The intention of the code created for this project was for it to be quickly adaptable for use when the 2025 re-analysis is completed. There are only three additional changes to the base code provided to make it ready for use in with the full dataset.
