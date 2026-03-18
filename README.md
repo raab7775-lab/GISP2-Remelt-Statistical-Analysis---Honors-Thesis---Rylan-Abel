@@ -11,9 +11,13 @@ Thesis Advisor:
 Dr. Bradley Markle, The Department of Geologic Sciences
 
 Defense Committee:
+
 Dr. Bradley Markle, The Department of Geologic Sciences
+
 Dr. Brian Hynek, The Department of Geologic Sciences
+
 Dr. Tracy Farrell, The Program for Writing and Rhetoric
+
 
 Thesis Abstract:
 The Greenland Ice Sheet Project (GISP2) is an ice core drilled within the Greenland Ice Sheet that has produced several foundational datasets for the study of paleoclimate. The core’s measured stable isotope record of δ18O and δD is one of these foundational datasets, completed in 1997 for the measurement of δ18O and in 2004 for δD, using Isotope Ratio Mass Spectroscopy. Beginning in 2024, there has been an effort to reanalyze the GISP2 ice core for δ18O and δD, completed by the INSTAAR Stable Isotope Lab with Laser Absorption Spectroscopy as a continuous flow analysis. An analysis was completed that aimed to downsample the 2025 dataset to the scale of the older datasets and to complete a statistical analysis between the old and new datasets. This was accomplished with the intent of discovering any apparent difference in the core, and the results of this are the detection of two distinct differences between the old and new datasets. One is the statistical offset between the means of the new and old data. Within the δ18O measurement campaign, where the 2025 dataset is isotopically heavier than the 1997 dataset, and for the δD measurement campaign, the 2025 dataset is isotopically lighter than the 2004 dataset. The second difference is an offset within the depth scale of the core, where the measured values of the 2025 dataset match most closely with the 1997 dataset when every point of the 2025 dataset is moved 0.02 m to a deeper depth. These differences were speculated to be caused in part by minimal core alteration of 30 years of storage, as well as systematic differences introduced between the operations of each melt. Ultimately, these are within the error of the δ18O and δD systems, meaning they are minimal enough to declare that the two datasets can essentially be treated as equivalent in future analysis. Thus, a core that has been in storage for 30 years can successfully be remelted on a completely different LAS system and can still come to the same results as the IRMS system.
