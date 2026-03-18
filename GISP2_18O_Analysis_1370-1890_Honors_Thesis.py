@@ -15,10 +15,10 @@ from scipy.stats import shapiro
 from scipy.stats import spearmanr
 import random
 
-GISP97 = pd.read_csv(r"C:\Users\omgit\OneDrive\Desktop\GISP2 Statistical Analysis - Rylan Abel\Original Analysis\All data used (edited)\1997_GISP2D_18O.DAT")
-GISP97 = pd.read_table(r"C:\Users\omgit\OneDrive\Desktop\GISP2 Statistical Analysis - Rylan Abel\Original Analysis\All data used (edited)\1997_GISP2D_18O.DAT", sep='\t', skiprows=[0])
-depth25 = np.loadtxt(r"C:\Users\omgit\OneDrive\Desktop\GISP2 Statistical Analysis - Rylan Abel\Original Analysis\All data used (edited)\2025_depth_model.txt")
-O1825 = np.loadtxt(r"C:\Users\omgit\OneDrive\Desktop\GISP2 Statistical Analysis - Rylan Abel\Original Analysis\All data used (edited)\2025_data_d18O_SIL_cfa.txt")
+GISP97 = pd.read_csv(r"C:\Users\omgit\OneDrive\Desktop\GISP2 Statistical Analysis - Rylan Abel\Original Analysis\All data used (edited)\Old_Analysis\1997_GISP2D_18O.DAT")
+GISP97 = pd.read_table(r"C:\Users\omgit\OneDrive\Desktop\GISP2 Statistical Analysis - Rylan Abel\Original Analysis\All data used (edited)\Old_Analysis\1997_GISP2D_18O.DAT", sep='\t', skiprows=[0])
+depth25 = np.loadtxt(r"C:\Users\omgit\OneDrive\Desktop\GISP2 Statistical Analysis - Rylan Abel\Original Analysis\All data used (edited)\New_Melt\2025_depth_model.txt")
+O1825 = np.loadtxt(r"C:\Users\omgit\OneDrive\Desktop\GISP2 Statistical Analysis - Rylan Abel\Original Analysis\All data used (edited)\New_Melt\2025_data_d18O_SIL_cfa.txt")
 ModGISP97 = GISP97[GISP97["(per mil)"] != 999999]  # Gets rid of unvalid data points
 # Interval Given is between 1372 and 1890
 
