@@ -965,17 +965,41 @@ def Correlation_Lag(a, b, d, e, f):
 
 
 def Testing_Restablization(a):
-    ''' Function that applies the lag calculated with the Correlation Lag
-    function to an interval, and then preforms the Testing Normality and TTest
+    '''
+    Function that applies the lag calculated with the Correlation Lag
+    function to an interval, and then preforms the Testing Normality and T-Test
     functions, to test if this would fix the apparent offset within the data.
-    Input the starting interval (a), the end interval (b), the amount of
-    offset (c), the seed of the mean distribution produced (d), set p_value to
-    true to print shapiro test results, set Histograms to true to print a
-    figure of the mean distributions for each data, set Histograms2 to True to
-    output a histogram of the mean distributions overlapped, and set
-    Boxplot to output a boxplot of both normal distributions next to eachother.
-    Outputs Several figures and returns the shifted Lag2025 depth array,
-    deuterium 2004 data array, and the deuterium 2025 data array.
+    Outputs 3 statements:
+        1. The normality of the 2004 and 2025 datasets after applying lag.
+        Shapiro test (>0.05 is normal).
+        2. Comparison test results of unaltered dataset.
+        parametric or nonparametric tests (<0.05 is significant difference).
+        3. The shapiro test p-value results for the new CLT distribution
+        to prove normality of new distribution after applying lag.
+        Shapiro test (>0.05 is normal).
+        4. A printed statement of the t-test results of CLT distribution.
+        (<0.05 is significant difference)
+
+    Outputs 4 figures:
+        1. A figure of the resulting comparison test after testing normality,
+        Contains the histogram distribution of the 2004 data, the 2025 data
+        and both dataset overlaid.
+        2. A figure of the two produced CLT histograms side by side for
+        visual comparison of dataset.
+        3. A histogram of the 2004 and 2025 CLT dataset histograms
+        overlaid.
+        4. A graph of the 2004 and 2025 CLT datasets as two
+        side by side boxplots. The default is False.
+
+    Parameters
+    ----------
+    a : float
+        Input offset of lag calculated from the correlation lag function
+
+    Returns
+    -------
+    None.
+
     '''
     def Lag2025(a, b, c):
         DEPTH25int = []
