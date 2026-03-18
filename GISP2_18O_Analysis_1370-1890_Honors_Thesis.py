@@ -292,7 +292,7 @@ def Difference(a, b, Hist=False, Figure=False):
 
 def Comparison_Tests(a, b, Figure=False):
     '''
-     Tests for the normality of the 2004 and 2025 data sets, then applies a
+     Tests for the normality of the 1997 and 2025 data sets, then applies a
     subsequent parametric or nonparametric comparison based on the normality.
     Output is two printed statements, the first being the results of the
     Shapiro-Wilk test (>0.05 is normal), and the second is the results of
