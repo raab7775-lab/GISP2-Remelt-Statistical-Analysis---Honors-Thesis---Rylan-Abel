@@ -44,7 +44,7 @@ GISP2_18O_Analysis_1370-1890_Honors_Thesis.py is the script that completes all a
 
 GISP2_D_Analysis_1370-1890_Honors_Thesis.py is the script that completes all analyses of delta D, including the downsampling of the 2025 dataset and the statistical analysis between the 2004 and 2025 datasets.
 
-"All data used (edited)" contains the version of the 1997/2004 GISP2 datasets that can be directly used within the .py files provided, with metadata clipped and correct column names for direct application into code. Additionally, the section of the 2025 data produced at the INSAAR-SIL for this analysis is included within a zip file containing only the interval completed in time for the production of this thesis. This file is labeled New_Analysis.zip, while the 1997/2004 datasets are within the file Old_Analysis
+"All data used (edited)" contains the version of the 1997/2004 GISP2 datasets that can be directly used within the .py files provided, with metadata clipped and correct column names for direct application into code. The version of the 2025 dataset used within this thesis was not included and will only be uploaded when the data has been offically published.
 
 "All data used (original)" contains the version of the 1997 and 2004 datasets unedited, thus including all metadata and essentially appearing as they were upon originally being downloaded. 
 
