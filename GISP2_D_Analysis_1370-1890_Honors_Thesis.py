@@ -610,7 +610,7 @@ def Testing_Normality(a, b, c, p_value=False, Histograms=False):
 
     DEPTH04int, D204int, Average25int = Interval_complete(1370, 1890)
 
-    D204int = D204int
+    D204int = D204int[:-1]
     random_index = np.arange(0, len(D204int))
     Normal_distribution04 = []
     Normal_distribution25 = []
