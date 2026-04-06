@@ -2,7 +2,7 @@
 
 ## Thesis Information
 
-Data Analysis and Comparison of the New GISP2 Ice Core Data: Continuous High-Resolution Water Isotope Data Vs Discrete 1997 and 2004 Collection 
+Comparison of the New GISP2 Stable Isotope Ice Core Data: Continuous High-Resolution δ18O and δD Data vs Discrete 1997 and 2004 Collection
 
 2026 Honors Thesis for The Department of Geologic Sciences at the University of Colorado at Boulder
 By Rylan Abel
@@ -25,7 +25,7 @@ The Greenland Ice Sheet Project 2 (GISP2) is an ice core drilled within the Gree
 
 ## Purpose of Repository and Citations
 
-This repository contains the code used in Rylan Abel's honors thesis, "Data Analysis and Comparison of the New GISP2 Ice Core Data: Continuous High-Resolution Water Isotope Data Vs Discrete 1997 and 2004 Collection". 
+This repository contains the code used in Rylan Abel's honors thesis, "Comparison of the New GISP2 Stable Isotope Ice Core Data: Continuous High-Resolution δ18O and δD Data vs Discrete 1997 and 2004 Collection". 
 
 It includes a copy of all the code for the interval used within the thesis and any data used. The thesis itself oversees a statistical analysis between the original GISP2 analyses completed on IRMS and the INSTAAR stable isotope lab's new re-analysis of GISP2 using a CRDS-CFA system. The analysis of GISP2 for delta 18O was originally completed by P.M. Grootes and M. Stuvier in 2007 at the University of Washington's Quaternary Isotope Laboratory, and the analysis of GISP2 for delta deuterium (D) was completed by J. White in 2004 at the University of Colorado Boulder’s Stable Isotope Laboratory. The majority of the data analysis was created in Python (Spyder (Python 3.13)), and some visuals were edited within Fire Alpaca (64bit). 
 
